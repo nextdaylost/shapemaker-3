@@ -42,3 +42,17 @@ Generate a browsable coverage report:
 ```shell
 pytest --cov --cov-report html
 ```
+
+### Linting
+
+Run the linter:
+
+```shell
+flake8
+```
+
+> Code formatting errors can usually be fixed by running `black`:
+>
+> ```shell
+> black src/
+> ```
