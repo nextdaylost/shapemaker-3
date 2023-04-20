@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "shapemaker"
+version = "0.1.0"
+description = "Geospatial vector geometry storage and retrieval"
+authors = ["Brian McGowan <brian@nextdaylost.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/nextdaylost/shapemaker"
+repository = "https://github.com/nextdaylost/shapemaker"
+documentation = "https://github.com/nextdaylost/shapemaker"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/nextdaylost/shapemaker/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+flake8 = "^6.0.0"
+flake8-docstrings = "^1.7.0"
+pre-commit = "^3.2.2"
+pytest = "^7.3.1"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.coverage.report]
+fail_under = 100
+
+[tool.coverage.run]
+source = ["src"]
