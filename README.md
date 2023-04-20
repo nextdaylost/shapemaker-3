@@ -62,3 +62,13 @@ flake8
 > ```shell
 > black src/
 > ```
+
+### Building
+
+Build source and wheel distributions:
+
+```shell
+poetry build
+```
+
+> This will output build artifacts to `dist/`.
