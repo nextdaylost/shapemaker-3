@@ -23,6 +23,12 @@ Activate a project shell:
 poetry shell
 ```
 
+Install Git hooks:
+
+```shell
+pre-commit install
+```
+
 ### Testing
 
 Run the test suite:
